@@ -39,6 +39,9 @@ body {
   justify-content: flex-end; }
 
 /***navbar*start here**/
+.navbar-brand {
+  display: none; }
+
 .navbar {
   background-color: #00CCE1;
   padding: 0 !important; }
@@ -211,6 +214,15 @@ body {
 
 /****doc gallery****/
 /*****doctore gallery *****/
+.each_doc_box_5 .card {
+  border-bottom-color: #F69165 !important; }
+  .each_doc_box_5 .card h3 {
+    color: #F69165 !important; }
+.each_doc_box_5 .doc_overlay {
+  display: block !important; }
+.each_doc_box_5 .doc_social {
+  display: block !important; }
+
 .each_doc_box {
   transition: all 0.2s; }
   .each_doc_box .card {
@@ -287,6 +299,12 @@ body {
   text-transform: capitalize;
   line-height: 1.5;
   padding: 20px 0; }
+.our_service_div .each_ser_box_5 {
+  border-color: #F69165 !important; }
+  .our_service_div .each_ser_box_5 h2 {
+    color: #F69165 !important; }
+  .our_service_div .each_ser_box_5 span {
+    color: #F69165 !important; }
 .our_service_div .all_ser_box .each_ser_box {
   border: 3px solid #3333334a;
   padding: 25px;
@@ -345,6 +363,27 @@ body {
     text-transform: capitalize;
     line-height: 1.5;
     padding: 20px 0; }
+  .price_plan_div .each_price_box2 .each_price_box_content {
+    border-color: #F69165 !important;
+    transition: all 0.3s; }
+    .price_plan_div .each_price_box2 .each_price_box_content .each_price_title h2 {
+      color: #F69165 !important;
+      transition: all 0.3s; }
+    .price_plan_div .each_price_box2 .each_price_box_content .each_price_box_usd {
+      background-color: #F69165 !important;
+      transition: all 0.3s; }
+      .price_plan_div .each_price_box2 .each_price_box_content .each_price_box_usd h1 {
+        color: #fff !important;
+        transition: all 0.3s; }
+      .price_plan_div .each_price_box2 .each_price_box_content .each_price_box_usd span {
+        color: #fff !important;
+        transition: all 0.3s; }
+    .price_plan_div .each_price_box2 .each_price_box_content .each_price_box_btn {
+      transition: all 0.3s; }
+      .price_plan_div .each_price_box2 .each_price_box_content .each_price_box_btn a {
+        background-color: #F69165 !important;
+        color: #FFFFFF !important;
+        transition: all 0.3s; }
   .price_plan_div .each_price_box {
     transition: all 0.3s; }
     .price_plan_div .each_price_box:hover .each_price_box_content {
@@ -525,51 +564,46 @@ footer {
       padding-bottom: 60px !important; }
     footer .foter_contents .newsletter_form {
       padding-bottom: 20px !important; }
-      footer .foter_contents .newsletter_form form {
-        display: flex;
-        justify-content: space-between;
-        overflow: hidden;
-        padding-right: 3px; }
-        footer .foter_contents .newsletter_form form input.newsletter_input {
-          width: 70%;
-          height: 55px;
-          border: 2px solid #444444;
-          border-right: none;
-          background-color: transparent;
-          padding-left: 12px;
-          color: #f39165;
+      footer .foter_contents .newsletter_form form input.newsletter_input {
+        height: 49px;
+        border: 2px solid #444444;
+        border-right: none;
+        background-color: transparent;
+        padding-left: 20px;
+        color: #f39165;
+        font-weight: 500;
+        font-size: 16px;
+        transition: all 0.2s; }
+        footer .foter_contents .newsletter_form form input.newsletter_input:focus {
+          outline: none;
+          border-color: #f39165;
+          transition: all 0.2s; }
+        footer .foter_contents .newsletter_form form input.newsletter_input::placeholder {
+          color: #3D3D3D;
           font-weight: 500;
-          font-size: 16px;
+          text-transform: capitalize;
+          font-size: 16px; }
+      footer .foter_contents .newsletter_form form a.newsletter_btn {
+        text-decoration: none;
+        padding: 15px 35px;
+        background-color: #F69165;
+        font-size: 16px;
+        font-weight: 700;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        transition: all 0.2s;
+        margin-left: -6px; }
+        footer .foter_contents .newsletter_form form a.newsletter_btn:hover {
+          background-color: #d26f44;
           transition: all 0.2s; }
-          footer .foter_contents .newsletter_form form input.newsletter_input:focus {
-            outline: none;
-            border-color: #f39165;
-            transition: all 0.2s; }
-          footer .foter_contents .newsletter_form form input.newsletter_input::placeholder {
-            color: #3D3D3D;
-            font-weight: 500;
-            text-transform: capitalize;
-            font-size: 16px; }
-        footer .foter_contents .newsletter_form form a.newsletter_btn {
-          width: 30%;
-          text-decoration: none;
-          padding: 15px 30px;
-          background-color: #F69165;
-          font-size: 16px;
-          font-weight: 700;
-          color: #FFFFFF;
-          text-transform: uppercase;
-          transition: all 0.2s; }
-          footer .foter_contents .newsletter_form form a.newsletter_btn:hover {
-            background-color: #d26f44;
-            transition: all 0.2s; }
     footer .foter_contents .follow_icon {
-      justify-content: space-between; }
+      align-items: center; }
       footer .foter_contents .follow_icon .follow_title h3 {
         font-weight: 600;
-        font-size: 30px;
+        font-size: 20px;
         color: #FFFFFF;
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        padding-right: 15px; }
       footer .foter_contents .follow_icon ul li a i {
         padding: 13px 15px;
         margin: 0 3px;
@@ -578,5 +612,8 @@ footer {
         footer .foter_contents .follow_icon ul li a i:hover {
           background-color: #F69165;
           transition: all 0.2s; }
+
+.linkdin {
+  background-color: #F69165 !important; }
 
 /*# sourceMappingURL=style.css.map */

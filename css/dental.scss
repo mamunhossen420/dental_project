@@ -1,5 +1,4 @@
 @import "mixin";
-@import "media";
 
 
 /***google fonts***/
@@ -59,6 +58,9 @@ body{
     @include dis_flex_jus_end;
 }
 /***navbar*start here**/
+.navbar-brand{
+    display: none;
+}
 .navbar{
     background-color: #00CCE1;
     padding: 0 !important;
@@ -296,6 +298,23 @@ body{
 }
 /****doc gallery****/
 /*****doctore gallery *****/
+.each_doc_box_5{
+    .card{
+        border-bottom-color: #F69165 !important;
+        h3{
+            color: #F69165 !important;
+        }
+    }
+    .doc_overlay{
+        display: block !important;
+    }
+    .doc_social{
+        display: block !important;
+    }
+
+}
+
+
 .each_doc_box{
     transition: all 0.2s;
     .card{
@@ -406,6 +425,16 @@ body{
         }
     }
 
+.each_ser_box_5{
+    border-color: #F69165 !important;
+    h2{
+        color: #F69165 !important;
+    }
+    span{
+        color: #F69165 !important;
+    }
+}
+
     .all_ser_box{
         .each_ser_box{
             border: 3px solid #3333334a;
@@ -487,6 +516,42 @@ body{
                 padding: 20px 0;
             }
         }
+    }
+    .each_price_box2{
+        .each_price_box_content{
+                border-color: #F69165 !important;
+                transition: all 0.3s;
+
+            .each_price_title{
+                h2{
+                    color: #F69165 !important;
+                    transition: all 0.3s;
+                }
+           }
+           .each_price_box_usd{
+                background-color: #F69165 !important;
+                transition: all 0.3s;
+                h1{
+                    color: #fff !important;
+                    transition: all 0.3s;
+                }
+                span{
+                    color: #fff !important;
+                    transition: all 0.3s;
+                }
+
+           }
+           .each_price_box_btn{
+            transition: all 0.3s;
+                a{
+                    
+                    background-color: #F69165 !important;
+                    color: #FFFFFF !important;
+                    transition: all 0.3s;
+                }
+            }
+
+        } 
     }
 
     .each_price_box{
@@ -765,18 +830,14 @@ footer{
         .newsletter_form{
             padding-bottom: 20px !important;
             form{
-                display: flex;
-                justify-content: space-between;
-                overflow: hidden;
-                padding-right: 3px;
+               
 
                 input.newsletter_input{
-                    width: 70%;
-                    height: 55px;
+                    height: 49px;
                     border: 2px solid #444444;
                     border-right: none;
                     background-color: transparent;
-                    padding-left: 12px;
+                    padding-left: 20px;
                     color: #f39165;
                     font-weight: 500;
                     font-size: 16px;
@@ -796,15 +857,15 @@ footer{
                     }
                 }
                 a.newsletter_btn{
-                    width: 30%;
                     text-decoration: none;
-                    padding: 15px 30px;
+                    padding: 15px 35px;
                     background-color: #F69165;
                     font-size: 16px;
                     font-weight: 700;
                     color: #FFFFFF;
                     text-transform: uppercase;
                     transition: all 0.2s;
+                    margin-left: -6px;
 
                     &:hover{
                         background-color: #d26f44;
@@ -814,14 +875,15 @@ footer{
             }
         }
         .follow_icon{
-            justify-content: space-between;
+            align-items: center;
 
             .follow_title{
                 h3{
                     font-weight: 600;
-                    font-size: 30px;
+                    font-size: 20px;
                     color: #FFFFFF;
                     text-transform: capitalize;
+                    padding-right: 15px;
                 }
             }
             ul{
@@ -843,4 +905,7 @@ footer{
             }
         }
     }
+}
+.linkdin{
+    background-color: #F69165 !important;
 }
